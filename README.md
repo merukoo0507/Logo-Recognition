@@ -23,5 +23,5 @@ Image recognition for logos.
     * (ex. 檔案LogoRecognition/LogoRecognition.pro)
   
   
-### 實驗結果 
+## 實驗結果 
   * 檔案 build-LogoRecognition-Desktop_Qt_5_2_1_MinGW_32bit-Debug/resultFlickrLogos.txt
