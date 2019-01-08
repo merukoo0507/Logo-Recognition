@@ -14,10 +14,10 @@ CXX           = g++
 DEFINES       = -DUNICODE -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG
 CFLAGS        = -pipe -fno-keep-inline-dllexport -O2 -Wall -Wextra $(DEFINES)
 CXXFLAGS      = -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I..\LogoRecognition -I"..\..\..\QtBuild\release\include" -I"." -I"..\..\..\Qt\Qt5.2.1\5.2.1\mingw48_32\mkspecs\win32-g++"
+INCPATH       = -I..\LogoRecognition -I"..\..\..\Opencv\release\include" -I"." -I"..\..\..\Qt\Qt5.2.1\5.2.1\mingw48_32\mkspecs\win32-g++"
 LINKER      =        g++
 LFLAGS        =        -Wl,-s -Wl,-subsystem,console -mthreads
-LIBS        =        -LC:\QtBuild\release\x64\mingw\lib -llibopencv_calib3d248 -llibopencv_contrib248 -llibopencv_core248 -llibopencv_features2d248 -llibopencv_flann248 -llibopencv_gpu248 -llibopencv_highgui248 -llibopencv_imgproc248 -llibopencv_legacy248 -llibopencv_ml248 -llibopencv_nonfree248 -llibopencv_objdetect248 -llibopencv_photo248 -llibopencv_stitching248 -llibopencv_video248 -llibopencv_videostab248 
+LIBS        =        -LC:\Opencv\release\x64\mingw\lib -llibopencv_calib3d248 -llibopencv_contrib248 -llibopencv_core248 -llibopencv_features2d248 -llibopencv_flann248 -llibopencv_gpu248 -llibopencv_highgui248 -llibopencv_imgproc248 -llibopencv_legacy248 -llibopencv_ml248 -llibopencv_nonfree248 -llibopencv_objdetect248 -llibopencv_photo248 -llibopencv_stitching248 -llibopencv_video248 -llibopencv_videostab248 
 QMAKE         = C:\Qt\Qt5.2.1\5.2.1\mingw48_32\bin\qmake.exe
 IDC           = idc
 IDL           = midl
@@ -105,7 +105,23 @@ compiler_clean:
 
 ####### Compile
 
-release/main.o: ../LogoRecognition/main.cpp 
+release/main.o: ../LogoRecognition/main.cpp ../../../Opencv/release/include/opencv2/highgui/highgui.hpp \
+		../../../Opencv/release/include/opencv2/core/core.hpp \
+		../../../Opencv/release/include/opencv2/core/types_c.h \
+		../../../Opencv/release/include/opencv2/core/version.hpp \
+		../../../Opencv/release/include/opencv2/core/operations.hpp \
+		../../../Opencv/release/include/opencv2/core/mat.hpp \
+		../../../Opencv/release/include/opencv2/highgui/highgui_c.h \
+		../../../Opencv/release/include/opencv2/core/core_c.h \
+		../../../Opencv/release/include/opencv2/calib3d/calib3d.hpp \
+		../../../Opencv/release/include/opencv2/features2d/features2d.hpp \
+		../../../Opencv/release/include/opencv2/flann/miniflann.hpp \
+		../../../Opencv/release/include/opencv2/flann/defines.h \
+		../../../Opencv/release/include/opencv2/flann/config.h \
+		../../../Opencv/release/include/opencv2/imgproc/imgproc.hpp \
+		../../../Opencv/release/include/opencv2/imgproc/types_c.h \
+		../../../Opencv/release/include/opencv2/nonfree/nonfree.hpp \
+		../../../Opencv/release/include/opencv2/nonfree/features2d.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\LogoRecognition\main.cpp
 
 ####### Install

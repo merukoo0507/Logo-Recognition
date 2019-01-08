@@ -5,9 +5,9 @@ CONFIG -= qt
 
 SOURCES += main.cpp
 
-INCLUDEPATH += C:\QtBuild\release\include
+INCLUDEPATH += C:\Opencv\release\include
 
-LIBS += -LC:\QtBuild\release\x64\mingw\lib \
+LIBS += -LC:\Opencv\release\x64\mingw\lib \
         -llibopencv_calib3d248      \
         -llibopencv_contrib248      \
         -llibopencv_core248         \
