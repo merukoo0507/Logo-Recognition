@@ -1,0 +1,6 @@
+0: 20 4 
+1: 6 67 
+atime:2.125
+runningTime:312.375
+total_co:87 , total_err:60
+prediction:0.591837
