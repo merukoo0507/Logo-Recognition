@@ -9,10 +9,13 @@ Image recognition for logos.
 
 #### Environment
 * Qt 5.2.1 
-  * 須設定環境變數 (ex. 路徑C:\Qt\Qt5.2.1\5.2.1\mingw48_32\bin)
+  * 須設定環境變數
+    * (ex. 路徑C:\Qt\Qt5.2.1\5.2.1\mingw48_32\bin)
   * 使用最新版也無訪 (因為這是以前做的專題，所以版本很古老)
 * 加入OPENCV library 
-  * 須設定library到環境變數 (ex. 路徑C:\Opencv\release\x64\mingw\bin)
-  * Qt須設定library (ex. 檔案LogoRecognition/LogoRecognition.pro)
+  * 須設定library到環境變數
+    * (ex. 路徑C:\Opencv\release\x64\mingw\bin)
+  * Qt須設定library 
+    * (ex. 檔案LogoRecognition/LogoRecognition.pro)
 
 
