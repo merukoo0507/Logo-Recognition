@@ -25,4 +25,4 @@ Image recognition for logos.
   
 ## 實驗結果 
   * 執行後，實驗統計結果儲存在resultFlickrLogos.txt
-    *路徑 build-LogoRecognition-Desktop_Qt_5_2_1_MinGW_32bit-Debug/resultFlickrLogos.txt
+    * 路徑 build-LogoRecognition-Desktop_Qt_5_2_1_MinGW_32bit-Debug/resultFlickrLogos.txt
