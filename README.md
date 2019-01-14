@@ -20,7 +20,7 @@ Image recognition for logos.
   * 須設定library到環境變數
     * (ex. 路徑C:\Opencv\release\x64\mingw\bin)
   * Qt須設定library 
-    * (ex. 檔案LogoRecognition/LogoRecognition.pro)
+    * [LogoRecognition.pro](LogoRecognition/LogoRecognition.pro)
   
   
 ## 實驗結果 
