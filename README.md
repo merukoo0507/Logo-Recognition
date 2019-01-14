@@ -14,7 +14,8 @@ Image recognition for logos.
 #### Qt 5.2.1 
   * 須設定環境變數
     * (ex. 路徑C:\Qt\Qt5.2.1\5.2.1\mingw48_32\bin)
-  * 使用最新版也無訪 (因為這是以前做的專題，所以版本很古老)
+  * 使用最新版也無訪
+    * (因為這是以前做的，所以版本很古老)
   
 #### OPENCV library 
   * 須設定library到環境變數
