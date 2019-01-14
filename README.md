@@ -22,7 +22,7 @@ Image recognition for logos.
   * Qt須設定library 
     * [LogoRecognition.pro](LogoRecognition/LogoRecognition.pro)
   
-  
 ## 實驗結果 
-  * 執行後，實驗統計結果儲存在resultFlickrLogos.txt
-    * 路徑 build-LogoRecognition-Desktop_Qt_5_2_1_MinGW_32bit-Debug/resultFlickrLogos.txt
+  * 執行後，實驗統計結果
+    * [resultFlickrLogos.txt](build-LogoRecognition-Desktop_Qt_5_2_1_MinGW_32bit-Debug/resultFlickrLogos.txt)
+
